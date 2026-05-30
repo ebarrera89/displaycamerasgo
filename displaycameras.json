@@ -1,0 +1,30 @@
+{
+  "blank": false,
+  "blank_image": "/usr/local/share/displaycameras/black.png",
+  "omx_timeout_seconds": 30,
+  "start_sleep_seconds": 3,
+  "feed_sleep_seconds": 1,
+  "retry_seconds": 5,
+  "display_detect": false,
+  "rotate": false,
+  "rotate_delay_seconds": 8,
+  "sequence_step": 1,
+  "repair_interval_seconds": 60,
+  "netcheck_host": "",
+  "layouts": {
+    "default": {
+      "windows": [
+        { "name": "upper_left", "position": "0 0 959 539" },
+        { "name": "upper_right", "position": "960 0 1919 539" },
+        { "name": "lower_left", "position": "0 540 959 1079" },
+        { "name": "lower_right", "position": "960 540 1919 1079" }
+      ]
+    }
+  },
+  "cameras": [
+    { "name": "FrontDoor", "url": "rtsp://192.168.1.10/live_2" },
+    { "name": "Driveway", "url": "rtsp://192.168.1.11/live_2" },
+    { "name": "BackYard", "url": "rtsp://192.168.1.12/live_2" },
+    { "name": "Garage", "url": "rtsp://192.168.1.13/live_2" }
+  ]
+}

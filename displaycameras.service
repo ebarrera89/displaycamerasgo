@@ -1,0 +1,16 @@
+[Unit]
+Description=Displays RTSP camera feeds with omxplayer
+After=network-online.target dbus.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/displaycameras run
+ExecStop=/usr/bin/displaycameras stop
+ExecReload=/usr/bin/displaycameras restart
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
