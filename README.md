@@ -1,6 +1,6 @@
 # displaycamerasgo
 
-This is a Go rewrite of `displaycameras` that keeps the important runtime behavior: it still launches `omxplayer` for each RTSP feed and controls each instance through DBus. The main difference is configuration: one JSON file replaces the old split Bash configuration and layout files.
+This is a Go rewrite of [displaycameras](https://github.com/Anonymousdog/displaycameras) that keeps the important runtime behavior: it still launches `omxplayer` for each RTSP feed and controls each instance through DBus. The main difference is configuration: one JSON file replaces the old split Bash configuration and layout files.
 
 Use Raspberry Pi OS Buster. Bullseye and newer Raspberry Pi OS releases removed normal `omxplayer` support, so Buster is the practical target if `omxplayer` is mandatory.
 
